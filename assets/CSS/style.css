@@ -921,8 +921,8 @@ img.avatar {
   }
 
   .img_section {
-    height: 30%;
-    width: 30%;
+    height: 24rem;
+    width: 24rem;
   }
   .card-contact{
     height: 50px;
@@ -1034,6 +1034,10 @@ img.avatar {
   }
   nav .logo-image img{
     opacity: 0;
+  }
+  .img_section {
+    height: 20rem;
+    width: 20rem;
   }
 
 }
