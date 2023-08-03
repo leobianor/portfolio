@@ -3,11 +3,6 @@ const modeToggle = body.querySelector(".mode-toggle");
 const sidebar = body.querySelector("nav");
 const sidebarToggle = body.querySelector("#check-icon");
 
-// Verificar se o status já está definido no localStorage, se não estiver, definir como "close"
-if (!localStorage.getItem("status")) {
-  localStorage.setItem("status", "close");
-}
-
 let getMode = localStorage.getItem("mode");
 if (getMode && getMode === "dark") {
   body.classList.toggle("dark");
@@ -16,6 +11,8 @@ if (getMode && getMode === "dark") {
 let getStatus = localStorage.getItem("status");
 if (getStatus && getStatus === "close") {
   sidebar.classList.toggle("close");
+} else {
+  sidebar.classList.add("close");
 }
 
 modeToggle.addEventListener("click", () => {
